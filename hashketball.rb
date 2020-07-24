@@ -201,9 +201,10 @@ def big_shoe_rebounds
     end
   }
   game_hash[:away][:players].each{ |player|
-  shoe_rebound[player[:shoe]] = player[:rebounds]
-    if biggest_shoe < player[:shoe]
-      biggest_shoe = player[:shoe]
-  end
-    
+    shoe_rebound[player[:shoe]] = player[:rebounds]
+      if biggest_shoe < player[:shoe]
+        biggest_shoe = player[:shoe]
+      end
+  }
+  shoe_rebound[biggest_shoe] 
 end
