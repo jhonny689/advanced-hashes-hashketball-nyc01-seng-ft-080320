@@ -145,7 +145,6 @@ end
 
 def num_points_scored(player)
   #write code here
-  binding.pry
   find_player_info(player)[:points]
 end
 
