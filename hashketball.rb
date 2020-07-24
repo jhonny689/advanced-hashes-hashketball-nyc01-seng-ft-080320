@@ -128,6 +128,7 @@ end
 
 # Write code here
 def find_player_info(player)
+  game
   if game_hash[:home][:players].include? player
     return 
 end
