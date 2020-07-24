@@ -150,10 +150,12 @@ end
 
 def shoe_size(player)
   #Write code here
+  find_player_info(player)[:shoe_size]
 end
 
 def team_colors(team)
   #write code here
+  find_team_info(team)[:colors]
 end
 
 def team_names
