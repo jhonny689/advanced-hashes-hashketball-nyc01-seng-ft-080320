@@ -127,10 +127,17 @@ def game_hash
 end
 
 # Write code here
-def find_player_info(player)
-  game
-  if game_hash[:home][:players].include? player
-    return 
+def find_player_info(requested_player)
+    game_hash[:home][:players].each { |player|
+      if player[player_name] = requested_player
+        return player
+      end
+    }
+    game_hash[:away][:players].each { |player|
+     if player[player_name] = requested_player
+        return player
+      end
+    }
 end
 
 def num_points_scored(player)
