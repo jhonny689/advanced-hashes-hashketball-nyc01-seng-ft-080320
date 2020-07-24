@@ -144,10 +144,12 @@ def find_player_info(requested_player)
 end
 
 def find_team_info(requested_team)
-  binding.pry
+  
   if game_hash[:home][:team_name] == requested_team
+    binding.pry
     return game_hash[:home]
   elseif game_hash[:away][:team_name] == requested_team
+    binding.pry
     return game_hash[:away]
   end
 end
