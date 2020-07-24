@@ -127,9 +127,13 @@ def game_hash
 end
 
 # Write code here
+def find_player_info(player)
+  if game_hash[:home][:players].contain
+end
 
-def num_points_scored
+def num_points_scored(player)
   #write code here
+  find_player_info(player)[:points]
 end
 
 def shoe_size(player)
