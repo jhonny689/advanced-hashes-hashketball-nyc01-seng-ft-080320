@@ -149,6 +149,7 @@ def find_team_info(requested_team)
   elseif game_hash[:away][:team_name] == requested_team
     return game_hash[:away]
   else return nil
+  end
 end
 
 
