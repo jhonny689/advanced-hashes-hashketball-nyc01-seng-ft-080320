@@ -178,6 +178,11 @@ end
 
 def player_numbers(team)
   #write code here
+  jersey_numbers = []
+  find_team_info(team)[:players].each { |player|
+    jersey_numbers.push(player[:number])
+  }
+  jersey_numbers
 end
 
 def player_stats(player)
