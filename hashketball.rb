@@ -143,6 +143,15 @@ def find_player_info(requested_player)
     }
 end
 
+def find_team_info(requested_team)
+  if game_hash[:home][:team_name] == requested_team
+    return game_hash[:home]
+  else if game_hash[:away][:team_name] == requested_team
+    return game_hash[:away]
+  else return nil
+end
+end
+
 def num_points_scored(player)
   #write code here
   find_player_info(player)[:points]
