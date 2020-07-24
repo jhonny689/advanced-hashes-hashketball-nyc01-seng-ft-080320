@@ -151,6 +151,7 @@ def find_team_info(requested_team)
   else return nil
 end
 
+
 def num_points_scored(player)
   #write code here
   find_player_info(player)[:points]
