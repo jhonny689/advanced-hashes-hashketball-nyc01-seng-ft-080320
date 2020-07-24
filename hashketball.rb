@@ -150,7 +150,6 @@ def find_team_info(requested_team)
     return game_hash[:away]
   else return nil
 end
-end
 
 def num_points_scored(player)
   #write code here
