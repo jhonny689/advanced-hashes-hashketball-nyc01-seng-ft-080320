@@ -128,7 +128,8 @@ end
 
 # Write code here
 def find_player_info(player)
-  if game_hash[:home][:players].contain
+  if game_hash[:home][:players].include? player
+    return 
 end
 
 def num_points_scored(player)
