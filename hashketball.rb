@@ -187,6 +187,7 @@ end
 
 def player_stats(player)
   #write code here
+  find_player_info(player)
 end
 
 def big_shoe_rebounds
