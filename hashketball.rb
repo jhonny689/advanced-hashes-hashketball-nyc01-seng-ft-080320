@@ -144,4 +144,14 @@ def team_names
   #write code here
 end
 
-def player_numbers
+def player_numbers(team)
+  #write code here
+end
+
+def player_stats(player)
+  #write code here
+end
+
+def big_shoe_rebounds
+  #write code here
+end
