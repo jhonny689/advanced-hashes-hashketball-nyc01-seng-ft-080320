@@ -130,13 +130,13 @@ end
 # Write code here
 def find_player_info(requested_player)
     game_hash[:home][:players].each { |player|
-      if player[:player_name] = requested_player
+      if player[:player_name] == requested_player
         binding.pry
         return player
       end
     }
     game_hash[:away][:players].each { |player|
-     if player[:player_name] = requested_player
+     if player[:player_name] == requested_player
        binding.pry
        return player
       end
